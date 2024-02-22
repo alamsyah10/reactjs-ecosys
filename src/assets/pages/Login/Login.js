@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './LoginPage.css'; // Import custom styles
 
 const LoginPage = () => {
@@ -33,7 +33,6 @@ const LoginPage = () => {
         }
       }
     } catch (error) {
-      // Handle login error
       setLoginStatus('Catch an error: ' + error.message);
     }
   };
