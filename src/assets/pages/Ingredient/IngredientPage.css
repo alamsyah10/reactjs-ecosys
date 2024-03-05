@@ -1,0 +1,67 @@
+
+.content-container-original {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px 15px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative; /* Add this line */
+    z-index: 1; /* Add this line */
+}
+.content-container {
+    width: 150%; /* Adjust width to match map container */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ingredient-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ingredient-table th,
+.ingredient-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-check {
+    margin-bottom: 15px;
+}
+
+.selected-row {
+    background-color: #f0f0f0;
+}
+
+.ingredient-checkbox {
+    margin: 0;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

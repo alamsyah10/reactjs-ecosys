@@ -1,57 +1,65 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.profile-page {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #fafafa;
+    flex-direction: row;
+    justify-content: flex-start; /* Adjust alignment as needed */
 }
 
-button {
-    background-color: #3897f0;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-}
-
-.sidebar {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #333;
-    padding-top: 20px;
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
 }
 
 .profile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid #e6e6e6;
+    width: 150%; /* Adjust width to match map container */
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    max-width: 400px;
-    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Adjust alignment as needed */
+    margin-bottom: 20px;
+}
+
+.profile-header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.profile-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center; /* Center-align the text */
+}
+
+.profile-header-details {
+    flex-grow: 1;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info p {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .map-container {
     width: 100%;
-    height: 300px;
+    height: 400px; /* Adjust height as needed */
     border: 1px solid #e6e6e6;
-    margin-top: 20px;
     border-radius: 8px;
     overflow: hidden;
 }
 
-#map {
-    width: 100%;
-    height: 100%;
-}
+/* Add styling for other elements as needed */

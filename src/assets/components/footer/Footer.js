@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row } from "reactstrap";
-// used for making the prop types of this component
-import PropTypes from "prop-types";
+import "./Footer.css"; // Import the CSS file for styles
 
 function Footer(props) {
   return (
@@ -18,10 +17,5 @@ function Footer(props) {
     </footer>
   );
 }
-
-Footer.propTypes = {
-  default: PropTypes.bool,
-  fluid: PropTypes.bool,
-};
 
 export default Footer;

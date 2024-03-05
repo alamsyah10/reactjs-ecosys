@@ -9,6 +9,7 @@ const Logout = () => {
   useEffect(() => {
     // Clear the state and navigate to the login page
     const handleLogout = () => {
+      localStorage.clear( );
       navigate('/login', { state: { ...state, token: null, refreshToken: null } });
     };
     

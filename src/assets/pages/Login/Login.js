@@ -29,6 +29,8 @@ const LoginPage = () => {
           setLoginStatus(message);
         } else {
           setLoginStatus('Login successful');
+          localStorage.setItem('token', token);
+          localStorage.setItem('refreshToken', refreshToken);
           navigate('/profile',{ state: { token: token, refreshToken: refreshToken }});
         }
       }
